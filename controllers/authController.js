@@ -50,6 +50,9 @@ export const login=async(req,res)=>{
 
         res.cookie('accessToken',token,{
             httpOnly:true,
+            // Frontend and API are on different domains in production
+            secure:process.env.NODE_ENV==='production',
+            sameSite:process.env.NODE_ENV==='production'?'none':'lax',
             expires:token.expiresIn,
         })
         .status(200)
