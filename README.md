@@ -2,6 +2,8 @@
 
 REST API for a tour booking website: browse and search tours, read and write reviews, and book trips.
 
+**Live API:** https://merntourproject.vercel.app/api/v1/tours
+
 **Frontend:** [Tour-Booking-Project-Frontend](https://github.com/xeetriaman/Tour-Booking-Project-Frontend)
 
 ## Tech stack
